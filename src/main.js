@@ -74,8 +74,8 @@ function card_template(contact, index = null) {
 
     // create card-container(div) using , itll be easier to append and prepend them later
     let card_container = document.createElement("div");
-    card_container.className = "col-12 col-lg-4 p-2 text-secondary";
-    card_container.style = "min-width:430px";
+    card_container.className = "col-12 col-lg-4 col-md-6 p-1 text-secondary";
+    card_container.style = "min-width:400px";
     // now
     card_container.onmouseover = () => {
         card_container.getElementsByTagName("button")[0].classList.add("d-block");
@@ -99,7 +99,7 @@ function card_template(contact, index = null) {
         </div>
         <div class="card-body col-8 bg-white">
                             <p>
-                                <span class="px-1 lead">
+                                <span class="lead">
                                     ${contact.name}
                                 </span>
                             </p>
