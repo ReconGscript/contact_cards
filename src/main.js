@@ -156,6 +156,12 @@ function add_new_card() {
     // cast the array into string , so we cant store it into LocalStorage
     let string_books = JSON.stringify(contacts);
     localStorage.setItem("contacts", string_books);
+
+    document.querySelector("#name").value = '';
+    document.querySelector("#mobile").value = '';
+    document.querySelector("#email").value = '';
+    document.querySelector("#address").value = '';
+
 }
 
 
